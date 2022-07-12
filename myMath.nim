@@ -3,4 +3,3 @@ proc fac*(i: int): int =
         fac(i-1)*i
     else:
         1
-    

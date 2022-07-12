@@ -1,14 +1,15 @@
 import fizzbuzz # basic fizzbuzz
 import myMath # basic math functions
 import coinFlip # coin flip speed test
+import linux # linux API
+import http # http requests :)
 import std/random
 import std/strformat
 import std/times
 
 randomize() # std/random init
 
-
-fizzbuzz.gen(rand(50)) # fizzbuzz from 1 to random up to 50
+fizzbuzz.gen(rand(20..50)) # fizzbuzz from 1 to random up to 50
 
 
 # calculates 7 random factorials from 0 to 10
@@ -27,3 +28,7 @@ echo(fmt"It took {cpuTime() - time} seconds and {attempts} attempts to flip 20 h
 
 let randomness = coinFlip.randomness(10_000_000)
 echo(fmt"Randomly adding and subtracting 1 10 million times produced on average {randomness}")
+
+
+http.getKeys()
+linux.size()

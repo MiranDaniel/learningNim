@@ -1,2 +1,2 @@
 build:
-	nim c --outdir:build --spellSuggest main.nim 
+	nim c -d:ssl --outdir:build --spellSuggest main.nim 
