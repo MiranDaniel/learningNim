@@ -3,6 +3,7 @@ import myMath # basic math functions
 import coinFlip # coin flip speed test
 import linux # linux API
 import http # http requests :)
+import lipsum # lorem ipsum...
 import std/random
 import std/strformat
 import std/times
@@ -29,6 +30,8 @@ echo(fmt"It took {cpuTime() - time} seconds and {attempts} attempts to flip 20 h
 let randomness = coinFlip.randomness(10_000_000)
 echo(fmt"Randomly adding and subtracting 1 10 million times produced on average {randomness}")
 
+http.getKeys() # gets my PGP keys using HTTP GET
+linux.size() # prints directory sizes
+http.downloadImage()
 
-http.getKeys()
-linux.size()
+lipsum.lipsumOps()
