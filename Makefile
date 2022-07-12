@@ -1,2 +1,2 @@
 build:
-	nim c --outdir:build main.nim
+	nim c --outdir:build --spellSuggest main.nim 
