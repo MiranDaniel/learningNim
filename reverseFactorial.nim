@@ -1,7 +1,7 @@
 import std/math
 import strformat
 
-var toCalc = float(69.420) # input number as float
+var toCalc = float(69.420) # must be float
 
 var precision = 17-len(fmt"{toCalc}")
 
